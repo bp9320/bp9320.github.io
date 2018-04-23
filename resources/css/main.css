@@ -6,20 +6,25 @@ body {
 
 .offset {
   position: relative;
-  top: 5rem; }
+  top: 6rem; }
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -54,7 +59,7 @@ body {
 
 /* Header styles */
 .header {
-  height: 5rem;
+  height: 6rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -63,14 +68,25 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1000; }
+  @media only screen and (max-width: 1040px) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around; } }
   .header__companyName {
     color: #ebe3e2;
     font-family: "Press Start 2P";
     font-size: 2rem;
     margin-left: 2rem; }
+    @media only screen and (max-width: 1040px) {
+      .header__companyName {
+        margin: 0; } }
   .header__navbar {
     height: 100%;
     width: auto; }
+    @media only screen and (max-width: 1040px) {
+      .header__navbar {
+        height: auto; } }
   .header__navItem {
     display: inline-block;
     vertical-align: bottom;
@@ -78,28 +94,39 @@ body {
     font-size: 1rem; }
     .header__navItem--last {
       margin-right: 2rem; }
+      @media only screen and (max-width: 1040px) {
+        .header__navItem--last {
+          margin: 0; } }
   .header__navLink {
     display: block;
     text-decoration: none;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     color: #ebe3e2;
     font-weight: bold;
-    transition: all 0.4s; }
+    transition: background-color 0.4s; }
+    @media only screen and (max-width: 1040px) {
+      .header__navLink {
+        padding: 0.5rem; } }
     .header__navLink:hover {
       background-color: rgba(235, 227, 226, 0.25); }
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -155,16 +182,21 @@ body {
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -216,16 +248,21 @@ body {
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -298,7 +335,7 @@ body {
   display: block;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #46566d;
   padding: 1rem 0;
   transition: all 0.4s;
@@ -335,16 +372,21 @@ body {
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -431,16 +473,21 @@ body {
 
 /* General style for site container */
 .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+  box-sizing: border-box;
   width: 960px;
   margin: 1rem auto;
   display: flex; }
+  @media only screen and (max-width: 1040px) {
+    .disclaimer__siteContainer, .aboutMe__siteContainer, .skills__siteContainer, .portfolio__siteContainer {
+      width: 100%;
+      padding: 0 2rem; } }
 
 /* Hash-link header offset for site sections */
 .disclaimer::before, .aboutMe::before, .skills:before, .portfolio::before {
   display: block;
   content: "";
-  height: 5rem;
-  margin-top: -5rem; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 /* General style for portfolio informational dropdown */
 .portfolio__siteDetails {
@@ -485,6 +532,9 @@ body {
   color: #ebe3e2; }
   .footer__icon {
     margin: 0 2rem;
-    color: #ebe3e2; }
+    color: #ebe3e2;
+    transition: font-size 0.4s; }
+    .footer__icon:hover {
+      font-size: 3.5rem; }
 
 /*# sourceMappingURL=main.css.map */

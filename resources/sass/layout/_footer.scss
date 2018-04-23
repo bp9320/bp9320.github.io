@@ -16,5 +16,10 @@
   @include element('icon') {
     margin: 0 2rem;
     color: $headerFontColor;
+    transition: font-size 0.4s;
+
+    &:hover {
+      font-size: 3.5rem;
+    }
   }
 }
