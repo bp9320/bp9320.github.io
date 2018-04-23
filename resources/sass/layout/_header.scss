@@ -1,0 +1,76 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "placeholders";
+
+/* Header styles */
+.header {
+  height: $headerHeight;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $headerBGColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  // @include element('sitecontainer') {
+  //   @extend %sitecontainer;
+  //   height: 100%;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+  // @include element('company') {
+  //   height: 100%;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+  //
+  // @include element('companyLogo') {
+  //   height: $headerHeight * 0.75;
+  //   width: auto;
+  // }
+
+  @include element('companyName') {
+    color: $headerFontColor;
+    font : {
+      family: 'Press Start 2P', ;
+      size: 2rem;
+    }
+    margin-left: 2rem;
+  }
+
+  @include element('navbar') {
+    height: 100%;
+    width: auto;
+  }
+
+  @include element('navItem') {
+    display: inline-block;
+    vertical-align: bottom;
+    font: {
+      family: 'Press Start 2P', cursive;
+      size: $headerHeight * (1/5);
+    }
+
+    @include modifier('last') {
+      margin-right: 2rem;
+    }
+  }
+
+  @include element('navLink') {
+    display: block;
+    text-decoration: none;
+    padding: $headerHeight * (2/5) $headerHeight / 5;
+    color: $headerFontColor;
+    font-weight: bold;
+    transition: all 0.4s;
+
+      &:hover {
+        background-color: $hoverBGColor;
+      }
+  }
+}

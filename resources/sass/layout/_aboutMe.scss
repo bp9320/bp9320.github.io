@@ -1,0 +1,30 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@import "./placeholders";
+
+.aboutMe {
+  &::before {
+    @extend %hashLinkOffset;
+  }
+
+  @include element('siteContainer') {
+    @extend %siteContainer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include element('title') {
+    @include titlefont(2rem);
+    margin: 1rem 0;
+  }
+
+  // @include element('subTitle') {
+  //   @include titlefont(1rem, $subTitleFontColor);
+  // }
+
+  @include element('paragraph') {
+    @include bodyfont(1rem);
+    margin-top: 1rem;
+  }
+}

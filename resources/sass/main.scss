@@ -1,0 +1,23 @@
+@import "./helpers/variables";
+
+// General styles
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: $bodyBGColor
+}
+
+.offset {
+  position: relative;
+  top: $headerHeight;
+}
+
+// Imports
+@import "./layout/header";
+@import "./layout/disclaimer";
+@import "./layout/aboutMe";
+@import "./layout/skills";
+@import "./layout/portfolio";
+@import "./layout/footer";

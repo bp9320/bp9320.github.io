@@ -1,0 +1,100 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+@import "./placeholders";
+
+/* Sills Styles */
+
+.skills {
+  &:before {
+    @extend %hashLinkOffset;
+  }
+
+  @include element('siteContainer') {
+  @extend %siteContainer;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  @include element('title') {
+    @include titlefont(2rem);
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  @include element('subTitle') {
+    @include titlefont(1rem);
+    text-align: center;
+
+    @include modifier('marginBottom') {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include element('paragraph') {
+    @include bodyfont(1rem);
+    margin-top: 1rem;
+  }
+
+  @include element('skillsDisplay') {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+  }
+
+  @include element('skillsList') {
+    width: 30%;
+    height: auto;
+    border: 2px solid $headerBGColor;
+    border-radius: 0.25rem;
+    z-index: 2;
+  }
+
+  @include element('skill') {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font: {
+      family: 'Press Start 2P', cursive;
+      size: $headerHeight * (1/5);
+    }
+    color: $headerBGColor;
+    padding: 1rem 0;
+    transition: all 0.4s;
+    z-index: 3;
+      &:hover {
+        text-decoration: underline;
+      }
+  }
+
+  @include element('skillsDetails') {
+    width: 65%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin:0 0 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100%;
+
+    @include modifier('visible') {
+      display: flex;
+    }
+  }
+
+  @include element('detailTitle') {
+    @include titlefont(1rem);
+    margin-bottom: 1.5rem;
+
+    @include modifier('last') {
+      margin-bottom: 0;
+    }
+  }
+
+  @include element('detailText') {
+    @include bodyfont(1rem);
+  }
+}
