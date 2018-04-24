@@ -334,6 +334,7 @@ body {
   width: 100%;
   display: block;
   text-align: center;
+  cursor: default;
   font-family: 'Press Start 2P', cursive;
   font-size: 1.2rem;
   color: #46566d;
