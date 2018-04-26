@@ -1,3 +1,8 @@
+h2, h4, p {
+  display: inline;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
 html {
   font-size: 14px; }
 
@@ -167,11 +172,13 @@ body {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
+  text-align: center;
   margin: 1rem 0; }
 .disclaimer__subTitle {
   color: #a44c28;
   font-family: 'Bungee', cursive;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-align: center; }
 .disclaimer__paragraph {
   color: #353538;
   font-family: 'Rhodium Libre', serif;
@@ -237,6 +244,7 @@ body {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
+  text-align: center;
   margin: 1rem 0; }
 .aboutMe__paragraph {
   color: #353538;
@@ -303,12 +311,14 @@ body {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
+  text-align: center;
   margin: 1rem 0;
   text-align: center; }
 .skills__subTitle {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 1rem;
+  text-align: center;
   text-align: center; }
   .skills__subTitle--marginBottom {
     margin-bottom: 2rem; }
@@ -324,25 +334,42 @@ body {
   height: auto;
   display: flex;
   overflow: hidden; }
+  @media only screen and (max-width: 690px) {
+    .skills__skillsDisplay {
+      flex-direction: column; } }
 .skills__skillsList {
   width: 30%;
   height: auto;
   border: 2px solid #46566d;
   border-radius: 0.25rem;
   z-index: 2; }
+  @media only screen and (max-width: 690px) {
+    .skills__skillsList {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; } }
 .skills__skill {
   width: 100%;
   display: block;
   text-align: center;
   cursor: default;
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #46566d;
   padding: 1rem 0;
   transition: all 0.4s;
   z-index: 3; }
   .skills__skill:hover {
     text-decoration: underline; }
+  @media only screen and (max-width: 690px) {
+    .skills__skill {
+      display: inline-block;
+      width: auto;
+      margin: 0 0.5rem; } }
 .skills__skillsDetails {
   width: 65%;
   height: auto;
@@ -354,13 +381,18 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 100%; }
+  left: 100%;
+  z-index: 2; }
+  @media only screen and (max-width: 690px) {
+    .skills__skillsDetails {
+      width: 100%; } }
   .skills__skillsDetails--visible {
     display: flex; }
 .skills__detailTitle {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 1.5rem; }
   .skills__detailTitle--last {
     margin-bottom: 0; }
@@ -429,6 +461,7 @@ body {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 2rem;
+  text-align: center;
   margin: 1rem 0;
   text-align: center; }
 .portfolio__paragraph {
@@ -464,11 +497,13 @@ body {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 1rem;
+  text-align: center;
   margin: 0.5rem 0 1rem 0; }
 .portfolio__detailLink {
   color: #a44c28;
   font-family: 'Bungee', cursive;
   font-size: 0.75rem;
+  text-align: center;
   display: inline;
   margin-top: 0.5rem; }
 
@@ -534,8 +569,8 @@ body {
   .footer__icon {
     margin: 0 2rem;
     color: #ebe3e2;
-    transition: font-size 0.4s; }
+    transition: all 0.4s; }
     .footer__icon:hover {
-      font-size: 3.5rem; }
+      transform: scale(1.2); }
 
 /*# sourceMappingURL=main.css.map */

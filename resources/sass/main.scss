@@ -1,6 +1,12 @@
 @import "./helpers/variables";
 
 // General styles
+h2, h4, p {
+  display: inline;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
 html {
   font-size: 14px;
 }

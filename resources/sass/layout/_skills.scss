@@ -40,6 +40,10 @@
     height: auto;
     display: flex;
     overflow: hidden;
+
+    @media only screen and (max-width: 690px) {
+      flex-direction: column;
+    }
   }
 
   @include element('skillsList') {
@@ -48,6 +52,15 @@
     border: 2px solid $headerBGColor;
     border-radius: 0.25rem;
     z-index: 2;
+
+    @media only screen and (max-width: 690px) {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 
   @include element('skill') {
@@ -57,8 +70,9 @@
     cursor: default;
     font: {
       family: 'Press Start 2P', cursive;
-      size: $headerHeight * (1/5);
+      size: 1rem;
     }
+    line-height: 1.5rem;
     color: $headerBGColor;
     padding: 1rem 0;
     transition: all 0.4s;
@@ -66,6 +80,12 @@
       &:hover {
         text-decoration: underline;
       }
+
+    @media only screen and (max-width: 690px) {
+      display: inline-block;
+      width: auto;
+      margin: 0 0.5rem;
+    }
   }
 
   @include element('skillsDetails') {
@@ -80,6 +100,11 @@
     align-items: center;
     position: relative;
     left: 100%;
+    z-index: 2;
+
+    @media only screen and (max-width: 690px) {
+      width: 100%;
+    }
 
     @include modifier('visible') {
       display: flex;
