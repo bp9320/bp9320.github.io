@@ -385,7 +385,8 @@ body {
   z-index: 2; }
   @media only screen and (max-width: 690px) {
     .skills__skillsDetails {
-      width: 100%; } }
+      width: 100%;
+      left: 0; } }
   .skills__skillsDetails--visible {
     display: flex; }
 .skills__detailTitle {
