@@ -376,7 +376,7 @@ body {
   box-sizing: border-box;
   padding: 1rem;
   margin: 0 0 0 auto;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -387,8 +387,6 @@ body {
     .skills__skillsDetails {
       width: 100%;
       left: 0; } }
-  .skills__skillsDetails--visible {
-    display: flex; }
 .skills__detailTitle {
   color: #a44c28;
   font-family: 'Bungee', cursive;

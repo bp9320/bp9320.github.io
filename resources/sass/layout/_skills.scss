@@ -94,7 +94,7 @@
     box-sizing: border-box;
     padding: 1rem;
     margin:0 0 0 auto;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -107,9 +107,6 @@
       left: 0;
     }
 
-    @include modifier('visible') {
-      display: flex;
-    }
   }
 
   @include element('detailTitle') {
